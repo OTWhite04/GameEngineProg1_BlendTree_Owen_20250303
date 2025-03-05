@@ -1463,6 +1463,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2798691346510379209, guid: de52d35a9ddbe5249b7abe85cd8fb944, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 702099157}
+    - target: {fileID: 2798691346510379209, guid: de52d35a9ddbe5249b7abe85cd8fb944, type: 3}
       propertyPath: moveSpeed
       value: 5
       objectReference: {fileID: 0}
@@ -1506,8 +1510,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2798691346510379209, guid: de52d35a9ddbe5249b7abe85cd8fb944, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -1517,9 +1520,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3026980349554276526, guid: de52d35a9ddbe5249b7abe85cd8fb944, type: 3}
       insertIndex: -1
       addedObject: {fileID: 702099157}
-    - targetCorrespondingSourceObject: {fileID: 3026980349554276526, guid: de52d35a9ddbe5249b7abe85cd8fb944, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 702099160}
   m_SourcePrefab: {fileID: 100100000, guid: de52d35a9ddbe5249b7abe85cd8fb944, type: 3}
 --- !u!4 &702099155 stripped
 Transform:
@@ -1552,19 +1552,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &702099160
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 702099156}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 115be4a17d00b1745853b1df06a07bad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 2
 --- !u!1 &717419854
 GameObject:
   m_ObjectHideFlags: 0
