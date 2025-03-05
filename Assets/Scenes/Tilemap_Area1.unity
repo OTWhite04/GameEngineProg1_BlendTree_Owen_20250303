@@ -1513,12 +1513,41 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1208298006638775091, guid: de52d35a9ddbe5249b7abe85cd8fb944, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1130115053}
+    - targetCorrespondingSourceObject: {fileID: 3026980349554276526, guid: de52d35a9ddbe5249b7abe85cd8fb944, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 702099157}
   m_SourcePrefab: {fileID: 100100000, guid: de52d35a9ddbe5249b7abe85cd8fb944, type: 3}
 --- !u!4 &702099155 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6919899817699339669, guid: de52d35a9ddbe5249b7abe85cd8fb944, type: 3}
   m_PrefabInstance: {fileID: 702099154}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &702099156 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3026980349554276526, guid: de52d35a9ddbe5249b7abe85cd8fb944, type: 3}
+  m_PrefabInstance: {fileID: 702099154}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &702099157
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702099156}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0194ede128b164d4f8b972f134307bc0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &717419854
 GameObject:
   m_ObjectHideFlags: 0
@@ -5561,10 +5590,10 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.625, y: 0.9375}
+    newSize: {x: 0.625, y: 0.9375}
+    adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
