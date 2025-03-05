@@ -12,6 +12,9 @@ public class PlayerMovement : MonoBehaviour
     //Reference to the Rigidbody.
     Rigidbody2D rigidBody;
 
+    //bool for moving and switching between the idel and moving animations.
+    public bool isMoving;
+
     //Float move speed variable.
     public float moveSpeed = 2.0f;
 
