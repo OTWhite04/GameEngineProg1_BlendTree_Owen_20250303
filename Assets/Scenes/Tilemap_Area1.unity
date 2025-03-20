@@ -1412,6 +1412,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1208298006638775091, guid: de52d35a9ddbe5249b7abe85cd8fb944, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1130115053}
+    - targetCorrespondingSourceObject: {fileID: 1208298006638775091, guid: de52d35a9ddbe5249b7abe85cd8fb944, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1130115056}
     - targetCorrespondingSourceObject: {fileID: 3026980349554276526, guid: de52d35a9ddbe5249b7abe85cd8fb944, type: 3}
       insertIndex: -1
       addedObject: {fileID: 702099157}
@@ -5523,6 +5526,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1130115056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130115050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 670c5141e93e2b04bbee8e1394284418, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentInterObj: {fileID: 0}
 --- !u!1 &1201284698
 GameObject:
   m_ObjectHideFlags: 0
@@ -6863,6 +6879,23 @@ Transform:
   - {fileID: 243163100}
   m_Father: {fileID: 112927879}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2036670288 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 671520203643934064, guid: 94471f39adcdecd429ae1f2b9e793566, type: 3}
+  m_PrefabInstance: {fileID: 4526968844769789172}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2036670293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036670288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5a16e3652dba7445abb900f6c49d2b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2064239236
 GameObject:
   m_ObjectHideFlags: 0
@@ -7008,6 +7041,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: InteractableGem
       objectReference: {fileID: 0}
+    - target: {fileID: 671520203643934064, guid: 94471f39adcdecd429ae1f2b9e793566, type: 3}
+      propertyPath: m_TagString
+      value: InterObject
+      objectReference: {fileID: 0}
     - target: {fileID: 1978591540555062587, guid: 94471f39adcdecd429ae1f2b9e793566, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.88
@@ -7051,7 +7088,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 671520203643934064, guid: 94471f39adcdecd429ae1f2b9e793566, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2036670293}
   m_SourcePrefab: {fileID: 100100000, guid: 94471f39adcdecd429ae1f2b9e793566, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
