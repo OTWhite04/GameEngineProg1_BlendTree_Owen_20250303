@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,12 +26,12 @@ public class InteractionObject : MonoBehaviour
     
 
     //Interact method for pressing space to interact with an object.
-    public void Interact(InteractionType state)
+    public void Interact()
     {
         Debug.Log("Interacting with " + gameObject.name);
     
         //A switch state for all the interaction types.
-        switch(state)
+        switch(interType)
         {
             case InteractionType.Nothing:
             {
@@ -76,4 +77,6 @@ public class InteractionObject : MonoBehaviour
     {
         Debug.Log("Display dialogue" + gameObject.name);
     }
+
+   
 }
