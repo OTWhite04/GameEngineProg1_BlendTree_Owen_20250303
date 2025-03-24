@@ -15,6 +15,7 @@ public class PlayerInteraction : MonoBehaviour
        if( Input.GetKeyDown(KeyCode.Space) && currentInterObj != null)
        {
             currentInterObj.GetComponent<InteractionObject>().Interact();
+
        }
     }
 

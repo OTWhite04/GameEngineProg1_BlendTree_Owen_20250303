@@ -71,7 +71,8 @@ public class InteractionObject : MonoBehaviour
 
     public void Pickup()
     {
-        Debug.Log("Picking up object" + gameObject.name);
+        Debug.Log("Added to inventory!:" + gameObject.name);
+        gameObject.SetActive(false);
     }
 
     public void Info()
