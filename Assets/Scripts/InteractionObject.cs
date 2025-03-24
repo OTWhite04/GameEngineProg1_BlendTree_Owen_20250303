@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class InteractionObject : MonoBehaviour
 {
+
+    
+
     //Enum for all the possible player interactons with objects.
     public enum InteractionType
     {
@@ -13,20 +16,44 @@ public class InteractionObject : MonoBehaviour
         Dialogue
     }
 
+    
+
     [Header("Type of Interactable")]
     public InteractionType interType;//Drop down for the enums above.
 
-    //TO DO:
+    
     
 
     //Interact method for pressing space to interact with an object.
-    public void Interact()
+    public void Interact(InteractionType state)
     {
         Debug.Log("Interacting with " + gameObject.name);
     
-        //Check which enum is selected
-        //Call method based on the enum InteractionType
-        //"Method for each enum"
+        //A switch state for all the interaction types.
+        switch(state)
+        {
+            case InteractionType.Nothing:
+            {
+                    Nothing();
+                    break;  
+            }
+            case InteractionType.Pickup:
+            {
+                    Pickup();
+                    break;
+            }
+            case InteractionType.Info:
+            {
+                    Info();
+                    break;
+            }
+            case InteractionType.Dialogue:
+            {
+                    Dialogue();
+                    break;
+            }
+
+        }
     
     }
 
@@ -45,4 +72,8 @@ public class InteractionObject : MonoBehaviour
         Debug.Log("Display info message on object" + gameObject.name);
     }
 
+    public void Dialogue()
+    {
+        Debug.Log("Display dialogue" + gameObject.name);
+    }
 }
