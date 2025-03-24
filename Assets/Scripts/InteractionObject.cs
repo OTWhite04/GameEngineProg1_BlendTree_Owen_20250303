@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class InteractionObject : MonoBehaviour
@@ -21,6 +22,11 @@ public class InteractionObject : MonoBehaviour
 
     [Header("Type of Interactable")]
     public InteractionType interType;//Drop down for the enums above.
+
+
+    [Header("Simple info message")]
+    public string infoMessage;//Reference to a string from info text.
+    public TMP_Text infoText;
 
     
     
@@ -70,7 +76,7 @@ public class InteractionObject : MonoBehaviour
 
     public void Info()
     {
-        Debug.Log("Display info message on object" + gameObject.name);
+        Debug.Log("Info Message:" + infoMessage);
     }
 
     public void Dialogue()
