@@ -77,6 +77,7 @@ public class InteractionObject : MonoBehaviour
     public void Info()
     {
         Debug.Log("Info Message:" + infoMessage);
+        infoText.text = infoMessage;
     }
 
     public void Dialogue()
