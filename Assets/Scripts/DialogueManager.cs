@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class DialogueManager : MonoBehaviour
 {
-    
-
     private Queue<string> dialogue;
 
     public GameObject dialogueUI;
@@ -40,13 +38,27 @@ public class DialogueManager : MonoBehaviour
 
     }
     
+    //Method for displaying the next box of text to the player.
+    public void DisplayNextText()
+    {
+        if(dialogue.Count >= 1)
+        {
+            dialogue.Dequeue();
+        }
+        else
+        {
+            dialogue.Clear();
+            dialogueUI.SetActive(false);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
         
     }
 
-
+    //Method for disabling the UI.
     public void DisableDialogueUI()
     {
         dialogueUI.SetActive(false);
