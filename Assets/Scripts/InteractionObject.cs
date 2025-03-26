@@ -18,7 +18,8 @@ public class InteractionObject : MonoBehaviour
         Dialogue
     }
 
-    
+    //Reference to dialogue manager script.
+    private DialogueManager dialogueManager;
 
     [Header("Type of Interactable")]
     public InteractionType interType;//Drop down for the enums above.
@@ -28,8 +29,16 @@ public class InteractionObject : MonoBehaviour
     public string infoMessage;//Reference to a string from info text.
     public TMP_Text infoText;
 
-    
-    
+    [Header("Dialogue Text")]
+    [TextArea] public string[] sentences;//String for the dialogue of the Gnome.
+
+
+
+
+    private void Awake()
+    {
+        dialogueManager = GetComponent<DialogueManager>();
+    }
 
     //Interact method for pressing space to interact with an object.
     public void Interact()
@@ -83,7 +92,7 @@ public class InteractionObject : MonoBehaviour
 
     public void Dialogue()
     {
-        Debug.Log("Display dialogue" + gameObject.name);
+        dialogueManager.StartDialogue(sentences);
     }
 
    
