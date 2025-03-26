@@ -8,7 +8,7 @@ public class DialogueManager : MonoBehaviour
 
     private Queue<string> dialogue;
 
-    //public GameObject dialogueUI;
+    public GameObject dialogueUI;
 
     // Start is called before the first frame update
     void Start()
@@ -22,9 +22,8 @@ public class DialogueManager : MonoBehaviour
     {
         dialogue.Clear();
 
-       //dialogueUI.SetActive(true);
-       //Cursor.visible = true;
-
+        dialogueUI.SetActive(true);
+        
         Cursor.visible = true;
 
         foreach (string currentstring in sentences)
@@ -48,9 +47,9 @@ public class DialogueManager : MonoBehaviour
     }
 
 
-    //public void DisableDialogueUI()
-    //{
-    //    dialogueUI.SetActive(false);
-    //}
+    public void DisableDialogueUI()
+    {
+        dialogueUI.SetActive(false);
+    }
 
 }

@@ -557,7 +557,6 @@ MonoBehaviour:
   gamePlayUI: {fileID: 1762920772}
   pausedUI: {fileID: 1100025258}
   optionsUI: {fileID: 1948417892}
-  dialogueUI: {fileID: 597318267}
 --- !u!114 &124296354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -570,6 +569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505c0849e3e8dc942ba525cc36e0f814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 0}
 --- !u!1 &165014994
 GameObject:
   m_ObjectHideFlags: 0
@@ -1480,6 +1480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505c0849e3e8dc942ba525cc36e0f814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 597318267}
 --- !u!1 &654268561
 GameObject:
   m_ObjectHideFlags: 0
@@ -6856,6 +6857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505c0849e3e8dc942ba525cc36e0f814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 597318267}
 --- !u!1 &1497175111
 GameObject:
   m_ObjectHideFlags: 0
@@ -7878,6 +7880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505c0849e3e8dc942ba525cc36e0f814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 0}
 --- !u!1 &2064239236
 GameObject:
   m_ObjectHideFlags: 0

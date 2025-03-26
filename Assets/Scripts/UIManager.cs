@@ -11,7 +11,7 @@ public class UIManager : MonoBehaviour
     public GameObject gamePlayUI;
     public GameObject pausedUI;
     public GameObject optionsUI;
-    public GameObject dialogueUI;
+    //public GameObject dialogueUI;
 
     //Sets Main Menu to active.
     public void MainMenuUI()
@@ -48,12 +48,12 @@ public class UIManager : MonoBehaviour
     }
 
 
-    public void DialogueUI()
-    {
-        DisableAllUIPanels();
-        dialogueUI.SetActive(true);
-        Cursor.visible = true;
-    }
+    //public void DialogueUI()
+    //{
+    //    DisableAllUIPanels();
+    //    dialogueUI.SetActive(true);
+    //    Cursor.visible = true;
+    //}
 
     //Disables all menus to start.
     public void DisableAllUIPanels()
@@ -62,7 +62,7 @@ public class UIManager : MonoBehaviour
         gamePlayUI.SetActive(false);
         pausedUI.SetActive(false);
         optionsUI.SetActive(false);
-        dialogueUI.SetActive(false);
+        //dialogueUI.SetActive(false);
     }
 
 
